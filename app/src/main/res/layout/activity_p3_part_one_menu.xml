@@ -5,6 +5,286 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fcfafc"
     tools:context=".P3PartOneMenu">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FEDA7F"
+        android:fontFamily="@font/btitr"
+        android:text="بازگشت"
+        android:textColor="#2D4356"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutStage"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#2D4356"
+        app:strokeWidth="6.8dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="164dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/text1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="269dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        app:srcCompat="@drawable/text2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/btitr"
+        android:text="بخش اول"
+        android:textAlignment="center"
+        android:textColor="#2D4356"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutStage"
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        android:background="@drawable/boxdesign"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stage1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FEDA7F"
+                android:fontFamily="@font/btitr"
+                android:text="1"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/stage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#80D8E2"
+                android:fontFamily="@font/btitr"
+                android:text="2"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/stage3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FB785E"
+                android:fontFamily="@font/btitr"
+                android:text="3"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stage4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#80D8E2"
+                android:fontFamily="@font/btitr"
+                android:text="4"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/stage5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FB785E"
+                android:fontFamily="@font/btitr"
+                android:text="5"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/stage6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FEDA7F"
+                android:fontFamily="@font/btitr"
+                android:text="6"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stage7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FB785E"
+                android:fontFamily="@font/btitr"
+                android:text="7"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/stage8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FEDA7F"
+                android:fontFamily="@font/btitr"
+                android:text="8"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                app:cornerRadius="20dp" />
+
+
+            <Button
+                android:id="@+id/stage9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#80D8E2"
+                android:fontFamily="@font/btitr"
+                android:text="9"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2.5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stage10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#80D8E2"
+                android:fontFamily="@font/btitr"
+                android:text="غول مرحله"
+                android:textColor="#2D4356"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="امتیاز: "
+        android:textColor="#303030"
+        android:textDirection="rtl"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
