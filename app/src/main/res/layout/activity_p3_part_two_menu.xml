@@ -6,7 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fcfafc"
-    tools:context=".P3PartOneMenu">
+    tools:context=".P3PartTwoMenu">
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="امتیاز: "
+        android:textColor="#303030"
+        android:textDirection="rtl"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
 
     <Button
         android:id="@+id/backButton"
@@ -58,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/btitr"
-        android:text="بخش اول"
+        android:text="بخش دوم"
         android:textAlignment="center"
         android:textColor="#2D4356"
         android:textSize="50sp"
@@ -164,8 +179,8 @@
                 android:id="@+id/stage5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="2.5dp"
                 android:layout_marginRight="2.5dp"
+                android:layout_marginLeft="2.5dp"
                 android:layout_weight="1"
                 android:backgroundTint="#FB785E"
                 android:fontFamily="@font/btitr"
@@ -218,8 +233,8 @@
                 android:id="@+id/stage8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="2.5dp"
                 android:layout_marginRight="2.5dp"
+                android:layout_marginLeft="2.5dp"
                 android:layout_weight="1"
                 android:backgroundTint="#FEDA7F"
                 android:fontFamily="@font/btitr"
@@ -227,7 +242,6 @@
                 android:textColor="#2D4356"
                 android:textSize="25sp"
                 android:textStyle="bold"
-
                 app:cornerRadius="20dp" />
 
 
@@ -271,20 +285,5 @@
 
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/scoreTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="امتیاز: "
-        android:textColor="#303030"
-        android:textDirection="rtl"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
