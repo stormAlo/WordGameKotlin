@@ -5,6 +5,186 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fcfafc"
     tools:context=".P4MainGame">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/text1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        app:srcCompat="@drawable/text2" />
+
+    <LinearLayout
+        android:id="@+id/wordbox"
+        android:layout_width="350dp"
+        android:layout_height="310dp"
+        android:background="@drawable/boxdesign"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/spaceContainer"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="80dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layoutDirection="rtl"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.491"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.498">-->
+
+        <!--        </LinearLayout>-->
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/wordContainer"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.491"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.498" />-->
+
+        <GridLayout
+            android:id="@+id/spaceContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:columnCount="8"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:rowCount="1" />
+
+        <GridLayout
+            android:id="@+id/wordContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:columnCount="8"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:rowCount="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/levelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:text="TextView"
+        android:textColor="#303030"
+        app:layout_constraintBottom_toTopOf="@+id/wordbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FEDA7F"
+        android:fontFamily="@font/btitr"
+        android:text="شروع مجدد"
+        android:textColor="#2D4356"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordbox"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#2D4356"
+        app:strokeWidth="6.8dp" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/levelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.999">
+
+        <ImageView
+            android:id="@+id/heart1img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart2img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart3img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart4img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart5img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
