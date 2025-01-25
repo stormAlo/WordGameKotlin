@@ -139,11 +139,9 @@ class P4MainGame : AppCompatActivity() {
 
         if (completeWord.length == thisStageWord.length) {
             if (thisStageWord == completeWord.toString()) {
-                winningEvents()
-            }
-//            else {
-//                losingHeart()
-//            }
+                winningEventelse {
+               losingHeart()
+          }
         }
     }
 
@@ -157,10 +155,59 @@ class P4MainGame : AppCompatActivity() {
 
         loadWords()
     }
-
+        private fun losingHeart() {
+            liveStage -= 1
+            Toast.makeText(this, "اشتباه بود :(( دوباره تلاش کن", Toast.LENGTH_SHORT).show()
+            Handler().postDelayed({ resetWords() }, 500)
+            when (liveStage) {
+                5 -> heart.forEach { it.alpha = 1f }
+                4 -> {
+                    startHeartAnimation(4)
+                    heart[4].alpha = 0.5f
+                }
+                3 -> {
+                    startHeartAnimation(3)
+                    heart[3].alpha = 0.5f
+                }
+                2 -> {
+                    startHeartAnimation(2)
+                    heart[2].alpha = 0.5f
+                }
+                1 -> {
+                    startHeartAnimation(1)
+                    heart[1].alpha = 0.5f
+                }
+                0 -> {
+                    startHeartAnimation(0)
+                    heart[0].alpha = 0.5f
+                    Handler().postDelayed({
+                        when (stageNumber) {
+                            1 -> {
+                                ScoreManager.getInstance().setScore(0)
+                                startActivity(Intent(this, P3PartOneMenu::class.java))
+                            }
+                            2 -> {
+                                ScoreManager.getInstance().setScore(10)
+                                startActivity(Intent(this, P3PartTwoMenu::class.java))
+                            }
+                            3 -> {
+                                ScoreManager.getInstance().setScore(20)
+                                startActivity(Intent(this, P3PartThreeMenu::class.java))
+                            }
+                        }
+                        finish()
+                    }, 1000)
+                }
+            }
+        }
+        private fun startHeartAnimation(number: Int) {
+            val heartAnimation: Animation = AnimationUtils.loadAnimation(this, R.anim.heart_animation)
+            heart[number].startAnimation(heartAnimation)
+        }
 
 
     private fun winningEvents() {
+    }
         Toast.makeText(this, "آفرین!", Toast.LENGTH_SHORT).show()
         resetButton.isEnabled = false
         resetButton.alpha = 0.5f
