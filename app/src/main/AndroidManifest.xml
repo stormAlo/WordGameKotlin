@@ -16,6 +16,18 @@
             android:name=".P3PartOneMenu"
             android:exported="false" />
         <activity
+            android:name=".P3PartTwoMenu"
+            android:exported="false" />
+        <activity
+            android:name=".P3PartThreeMenu"
+            android:exported="false" />
+        <activity
+            android:name=".P3PartFourMenu"
+            android:exported="false" />
+        <activity
+            android:name=".P4MainGame"
+            android:exported="false" />
+        <activity
             android:name=".p2_menu"
             android:exported="false" />
         <activity
