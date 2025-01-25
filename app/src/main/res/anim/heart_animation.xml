@@ -1,0 +1,30 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+
+    <!-- Scale Animation for Glowing Effect -->
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="1.1"
+        android:fromYScale="1.0"
+        android:toYScale="1.1"
+        android:pivotX="100%"
+        android:pivotY="100%"
+        android:duration="300"
+        android:repeatCount="1"
+        android:repeatMode="reverse"/>
+
+    <!-- Shake Animation -->
+    <translate
+        android:fromXDelta="-10%"
+        android:toXDelta="10%"
+        android:duration="100"
+        android:repeatCount="5"
+        android:repeatMode="reverse"/>
+
+    <!-- Fade Out Animation -->
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:duration="500"
+        android:startOffset="600"/>
+</set>
